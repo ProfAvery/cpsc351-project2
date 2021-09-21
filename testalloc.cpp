@@ -8,20 +8,22 @@
 
 using std::byte;
 using std::cout;
-using std::flush;
 using std::endl;
+using std::flush;
 
-void fill_block(byte* block, size_t size, char value)
+void fill_block(byte *block, size_t size, char value)
 {
-    for (unsigned int i = 0; i < size; i++) {
-        block[i] = (byte) value;
+    for (unsigned int i = 0; i < size; i++)
+    {
+        block[i] = (byte)value;
     }
 }
 
 void check_fill(byte *block, size_t size, char expected)
 {
-    for (unsigned int i = 0; i < size; i++) {
-        char c = (char) block[i];
+    for (unsigned int i = 0; i < size; i++)
+    {
+        char c = (char)block[i];
         assert(c == expected);
     }
 }

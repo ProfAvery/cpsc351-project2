@@ -19,7 +19,7 @@ To run the example program, enter `make test` or `./testalloc`
 The program `testalloc` tests the `Allocator` class with the following
 scenario:
 
-1. Create an Allocator object with the default memory size of 4KB.
+1. Create an allocator object with the default memory size of 4KB.
 
 2. Create block A of size 1KB, filling it with the letter 'A.'
 
@@ -34,10 +34,10 @@ scenario:
 
 7. Free blocks A and C.
 
-8. Dump the contents of the Allocator's memory. *Note*: when debugging, you
+8. Dump the contents of the allocator's memory. *Note*: when debugging, you
    may wish to do this earlier in the program as well.
 
-9. Destroy the Allocator object.
+9. Destroy the allocator object.
 
 *Note*: While `testalloc` makes for a good sanity-check, do not rely
 exclusively on this test. I will test your memory allocator in more
