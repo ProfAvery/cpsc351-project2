@@ -19,8 +19,8 @@ public:
     void dump();
 
 private:
-    size_t memory_size;
-    std::byte *memory;
+    size_t heap_size;
+    std::byte *heap;
 };
 
 #endif
